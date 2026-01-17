@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharmacy Inventory Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1>💊 Pharmacy Inventory Tracker</h1>
+        <p>Manage medicines, stock levels, and low stock alerts easily. 📦</p>
+      </div>
+      <div class="badge">📋 Inventory Dashboard</div>
+    </header>
+
+    <div class="card">
+      <div class="form">
+        <!-- DROPDOWN MEDICINE LIST -->
+        <select id="name">
+          <option value="">Select Medicine 💊</option>
+        </select>
+
+        <input type="number" id="qty" placeholder="Quantity 📦" />
+        <button id="addBtn" class="btn btn-primary">➕ Add Medicine</button>
+      </div>
+
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Medicine 🧪</th>
+            <th>Quantity 📦</th>
+            <th>Actions ⚙️</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
